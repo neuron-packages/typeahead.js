@@ -1713,4 +1713,4 @@
             return this;
         };
     })();
-})(window.jQuery);
+})(require('jquery'));
