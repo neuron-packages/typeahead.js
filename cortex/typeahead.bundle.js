@@ -5,6 +5,10 @@
  */
 
 (function($) {
+    if(typeof module != 'undefined' && typeof exports != 'undefined') { // cjs
+        module.exports = $;
+    }
+
     var _ = {
         isMsie: function() {
             return /(msie|trident)/i.test(navigator.userAgent) ? navigator.userAgent.match(/(msie |rv:)(\d+(.\d+)?)/i)[2] : false;
